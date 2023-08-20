@@ -69,14 +69,14 @@ export const Header = forwardRef<
             'bg-zinc-900/7.5 dark:bg-white/7.5',
         )}
       />
-      <Search />
+      {/* <Search /> */}
       <div className="flex items-center gap-5 lg:hidden">
         <MobileNavigation />
         <Link href="/" aria-label="Home">
           <Logo className="h-6" />
         </Link>
       </div>
-      <div className="flex items-center gap-5">
+      <div className="ml-auto flex items-center gap-5">
         <nav className="hidden md:block">
           <ul role="list" className="flex items-center gap-8">
             <TopLevelNavItem href="/">API</TopLevelNavItem>
@@ -86,11 +86,12 @@ export const Header = forwardRef<
         </nav>
         <div className="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15" />
         <div className="flex gap-4">
-          <MobileSearch />
+          {/* <MobileSearch /> */}
           <ThemeToggle />
         </div>
-        <div className="hidden min-[416px]:contents">
-          <Button href="#">Sign in</Button>
+        <div className="hidden min-[440px]:contents">
+          {/* TODO: Redirect to sign up form */}
+          <Button href="#">Sign&nbsp;Up</Button>
         </div>
       </div>
     </motion.div>

@@ -234,24 +234,24 @@ export const navigation: Array<NavGroup> = [
     title: 'Guides',
     links: [
       { title: 'Introduction', href: '/' },
-      { title: 'Quickstart', href: '/quickstart' },
-      { title: 'SDKs', href: '/sdks' },
-      { title: 'Authentication', href: '/authentication' },
-      { title: 'Pagination', href: '/pagination' },
-      { title: 'Errors', href: '/errors' },
-      { title: 'Webhooks', href: '/webhooks' },
+      // { title: 'Quickstart', href: '/quickstart' },
+      // { title: 'SDKs', href: '/sdks' },
+      // { title: 'Authentication', href: '/authentication' },
+      // { title: 'Pagination', href: '/pagination' },
+      // { title: 'Errors', href: '/errors' },
+      // { title: 'Webhooks', href: '/webhooks' },
     ],
   },
-  {
-    title: 'Resources',
-    links: [
-      { title: 'Contacts', href: '/contacts' },
-      { title: 'Conversations', href: '/conversations' },
-      { title: 'Messages', href: '/messages' },
-      { title: 'Groups', href: '/groups' },
-      { title: 'Attachments', href: '/attachments' },
-    ],
-  },
+  // {
+  //   title: 'Resources',
+  //   links: [
+  //     { title: 'Contacts', href: '/contacts' },
+  //     { title: 'Conversations', href: '/conversations' },
+  //     { title: 'Messages', href: '/messages' },
+  //     { title: 'Groups', href: '/groups' },
+  //     { title: 'Attachments', href: '/attachments' },
+  //   ],
+  // },
 ]
 
 export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
@@ -268,9 +268,9 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
             className={groupIndex === 0 ? 'md:mt-0' : ''}
           />
         ))}
-        <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
+        <li className="sticky bottom-0 z-10 mt-6 min-[440px]:hidden">
           <Button href="#" variant="filled" className="w-full">
-            Sign in
+            Sign Up
           </Button>
         </li>
       </ul>

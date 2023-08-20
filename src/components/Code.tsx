@@ -23,7 +23,8 @@ const languageNames: Record<string, string> = {
   php: 'PHP',
   python: 'Python',
   ruby: 'Ruby',
-  go: 'Go',
+  sql: 'SQL',
+  r: 'R',
 }
 
 function getPanelTitle({
