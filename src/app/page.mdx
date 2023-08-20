@@ -15,26 +15,92 @@ export const sections = [
 
 <HeroPattern />
 
-# API Documentation
+# Be Better
 
-Use the Protocol API to access contacts, conversations, group messages, and more and seamlessly integrate your product into the workflows of dozens of devoted Protocol users. {{ className: 'lead' }}
+Seize the opportunity today; your future self will thank you for it. Don't let hesitation hold you back—apply now and shape your destiny. I dare you. {{ className: 'lead' }}
 
 <div className="not-prose mb-16 mt-6 flex gap-3">
-  <Button href="/quickstart" arrow="right" children="Quickstart" />
-  <Button href="/sdks" variant="outline" children="Explore SDKs" />
+  {/* TODO: change link */}
+  <Button href="/quickstart" arrow="right" children="Cheatsheet" />
+  {/* TODO: change link */}
+  {/* <Button href="/sdks" variant="outline" children="Explore SDKs" /> */}
 </div>
+
+<CodeGroup>
+
+```python {{ language: 'python' }}
+from linkedIn import JobDatabase
+
+class Candidate:
+    def __init__(self, skills, level):
+        self.skills = skills
+        self.level = level
+
+    def fit(self, jobs=JobDatabase):
+        offers = [job for job in jobs if job.matches(self)]
+        return offers
+
+candidate = Candidate(
+    skills=['Python', 'Stats'],
+    level='noob'
+)
+
+candidate.fit()
+```
+
+```sql {{ language: 'sql' }}
+SELECT *
+FROM candidates
+WHERE
+    (skills LIKE '%Python%' AND skills LIKE '%Stats%')
+    AND level = 'noob'
+```
+
+```r {{ language: 'r' }}
+# library(linkedIn)
+
+Candidate <- R6Class(
+  "Candidate",
+
+  public = list(
+    skills = NULL,
+    level = NULL,
+
+    initialize = function(skills, level) {
+      self$skills <- skills
+      self$level <- level
+    },
+
+    fit = function(jobs = list()) {
+      offers <- lapply(jobs, function(job) {
+        if(job$matches(self)) {
+          return(job)
+        } else {
+          return(NULL)
+        }
+      })
+      offers <- offers[!sapply(offers, is.null)]
+      return(offers)
+    }
+  )
+)
+
+candidate <- Candidate$new(
+  skills = c('Python', 'Stats'),
+  level = 'noob'
+)
+
+offers_for_candidate <- candidate$fit()
+```
+
+</CodeGroup>
 
 ## Getting started {{ anchor: false }}
 
-To get started, create a new application in your [developer settings](#), then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our [integrations directory](#) to reach the Protocol community. {{ className: 'lead' }}
+To get started, check out our [resources](#resources), feel free to sign up for [free](#). {{ className: 'lead' }}
 
 <div className="not-prose">
-  <Button
-    href="/sdks"
-    variant="text"
-    arrow="right"
-    children="Get your API key"
-  />
+  <Button href="/sdks" variant="text" arrow="right" children="Sign Up" />
 </div>
 
 <Guides />

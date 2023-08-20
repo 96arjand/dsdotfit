@@ -3,26 +3,16 @@ import { Heading } from '@/components/Heading'
 
 const guides = [
   {
-    href: '/authentication',
-    name: 'Authentication',
-    description: 'Learn how to authenticate your API requests.',
-  },
-  {
-    href: '/pagination',
-    name: 'Pagination',
-    description: 'Understand how to work with paginated responses.',
-  },
-  {
-    href: '/errors',
-    name: 'Errors',
+    href: '/#', // TODO: update link
+    name: 'Notion Cheatsheet',
     description:
-      'Read about the different types of errors returned by the API.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   },
   {
-    href: '/webhooks',
-    name: 'Webhooks',
+    href: '/', // TODO: update link
+    name: 'Coaching',
     description:
-      'Learn how to programmatically configure webhooks for your app.',
+      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
   },
 ]
 
