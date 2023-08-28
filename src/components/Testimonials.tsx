@@ -1,7 +1,7 @@
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 
-const testermonials = [
+const testimonials = [
   {
     href: '/#', // TODO: update link
     name: 'Zayd Monkman',
@@ -18,21 +18,21 @@ const testermonials = [
   },
 ]
 
-export function Testermonials() {
+export function Testimonials() {
   return (
     <div className="my-16 xl:max-w-none">
-      <h1 id="testermonials">Testermonials</h1>
+      <h1 id="testimonials">Testimonials</h1>
       <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4">
-        {testermonials.map((testerminial) => (
-          <div key={testerminial.href}>
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.href}>
             <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
-              {testerminial.name}
+              {testimonial.name}
             </h3>
             <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-              {testerminial.description}
+              {testimonial.description}
             </p>
             <p className="mt-4">
-              <Button href={testerminial.href} variant="text" arrow="right">
+              <Button href={testimonial.href} variant="text" arrow="right">
                 {' '}
                 {/* TODO_minor: Open in new tab */}
                 See LinkedIn
