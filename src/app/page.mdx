@@ -2,6 +2,7 @@ import { Testimonials } from '@/components/Testimonials'
 import { CoachingServices } from '@/components/CoachingServices'
 import { HeroPattern } from '@/components/HeroPattern'
 import { SignUp } from '@/components/SignUp'
+import { usePathname } from 'next/navigation'
 
 export const metadata = {
   title: 'candidate.fit()',
@@ -9,22 +10,44 @@ export const metadata = {
 }
 
 export const sections = [
-  { title: 'Cheatsheet', id: 'Cheatsheet' },
-  { title: 'Testimonials', id: 'testimonials' },
+  // { title: 'Cheatsheet', id: 'Cheatsheet' },
+  // { title: 'Testimonials', id: 'testimonials' },
 ]
 
 <HeroPattern />
 
 # Don't be a <span className='font-mono'>.fit()</span> Data Scientist
 
-Do you ever feel like you know everything when you're at work, but when it comes to interviews you just can't make that come across? {{ className: 'lead' }}
+We've put togther a list of our learning from over a decade of industry experience. If we were starting out again this is what we would do differently. We've choosen these resources because they have more of a slant towards being useful in industry instead of just therortical {{ className: 'lead' }}
 
-<div className="not-prose mb-16 mt-6 flex gap-3">
-  {/* TODO: change link */}
-  <Button href="/" arrow="right" children="Cheatsheet" />
-  {/* TODO: change link */}
-  {/* <Button href="/sdks" variant="outline" children="Explore SDKs" /> */}
-</div>
+{/* <div className="not-prose mb-16 mt-6 flex gap-3"> */}
+{/* TODO: change link */}
+{/* <Button href="/" arrow="right" children="Cheatsheet" /> */}
+{/* TODO: change link */}
+{/* <Button href="/sdks" variant="outline" children="Explore SDKs" /> */}
+{/* </div> */}
+
+<Note>
+  If you find this sort of stuff useful you can get notified about updates for
+  [FREE](/signup) {{ className: 'lead' }}
+</Note>
+
+<SignUp showPassword={false} />
+
+# Lists and more lists {{ anchor: false }} {/* TODO_minor: maybe anchor should be true */}
+
+Add copy for lists.
+We've choosen these resources because they have more of a slant towards being useful in industry instead of just therortical {{ className: 'lead' }}
+
+## Most Common Mistakes Data Scientists face when presenting results to business stakeholders
+
+In this section you'll learn about some of the common traps which I used to make or saw other DS making when presenting to non-techy stakeholders.
+
+[See More](/presenting-to-bussiness-users)
+
+{/* <Testimonials /> */}
+
+{/* <CoachingServices /> */}
 
 <CodeGroup>
 
@@ -94,19 +117,3 @@ offers_for_candidate <- candidate$fit()
 ```
 
 </CodeGroup>
-
-# Lists and more lists {{ anchor: false }} {/* TODO_minor: maybe anchor should be true */}
-
-Add copy for lists.
-We've choosen these resources because they have more of a slant towards being useful in industry instead of just therortical {{ className: 'lead' }}
-
-<Note>
-  If you find this sort of stuff useful you can get notified about updates for
-  [FREE](/signup) {{ className: 'lead' }}
-</Note>
-
-<SignUp showPassword={false} />
-
-<Testimonials />
-
-{/* <CoachingServices /> */}
