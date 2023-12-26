@@ -9,8 +9,8 @@ export const metadata = {
 }
 
 export const sections = [
-  { title: 'Guides', id: 'guides' },
-  { title: 'Resources', id: 'resources' },
+  { title: 'Cheatsheet', id: 'Cheatsheet' },
+  { title: 'Testimonials', id: 'testimonials' },
 ]
 
 <HeroPattern />
@@ -95,46 +95,18 @@ offers_for_candidate <- candidate$fit()
 
 </CodeGroup>
 
-# Cheatsheet {{ anchor: false }} {/* TODO_minor: maybe anchor should be true */}
+# Lists and more lists {{ anchor: false }} {/* TODO_minor: maybe anchor should be true */}
 
-We've hand curated these resource to help you learn stuff. On topics ranging from Python, SQL, and stats. We've choosen these resource becuase they have more of a slant towards being useful in industry instead of just therortical.<br/>And its completely <b>FREE!</b> {{ className: 'lead' }}
-
-## Python
-
-{/* TODO_minor: add hyperlink to neetcode */}
-These are some of the best python resources we have come across. There are a couple of things in here which are useful for different stages. For example, `neetcode.io` is the gold standard when it comes to grinding out leetcode questions. Conversly the stuff on Pandas is more useful for learning new tips and tricks
-
-    <Properties>
-      <Property name="coreyms" type="theBasics">
-       <p>If you're keen on diving deeper into Python, you've got to check out CoreyMS on YouTube. His tutorials are spot on! From basics to more intricate stuff, he breaks it all down. After watching a few, I felt like I was genuinely getting a grip on the language. It's a goldmine of Python insights and practical coding know-how</p>
-       <Button href="/" variant="text" arrow="right" children="Read more" /> {/* TODO: add link and open in new tab*/}
-      </Property>
-      <Property name="The Hitchhiker's Guide to Python" type="theBasics">
-        <p>This guide is opinionated in a way that is almost, but not quite, entirely unlike Python's official documentation. You won't find a list of every Python web framework available here. Rather, you'll find a nice concise list of highly recommended options.</p>
-        <Button href="/" variant="text" arrow="right" children="Read more" /> {/* TODO: add link and open in new tab*/}
-      </Property>
-      <Property name="neetcode" type="techPrep">
-        <p>If you're prepping for those intense Python technical interviews, you've got to dive into neetcode.io. It's like LeetCode but tailored for Pythonistas. After grinding out a bunch of their challenges, I felt way more prepped and confident for the real deal. If you're aiming to impress in those interviews, this site's a lifesaver. Trust me, it's the workout your coding muscles need!</p>
-        <Button href="/" variant="text" arrow="right" children="Read more" /> {/* TODO: add link and open in new tab*/}
-      </Property>
-    </Properties>
-
-## Other Topics
-
-<ul>
-  <li>SQL</li>
-  <li>Statistics for DS</li>
-  <li>Experimentation</li>
-  <li>Machine Learning</li>
-</ul>
+Add copy for lists.
+We've choosen these resources because they have more of a slant towards being useful in industry instead of just therortical {{ className: 'lead' }}
 
 <Note>
-  To get started, and access our full range of topics, sign up now for
+  If you find this sort of stuff useful you can get notified about updates for
   [FREE](/signup) {{ className: 'lead' }}
 </Note>
 
-<SignUp showPassword={true} />
+<SignUp showPassword={false} />
 
 <Testimonials />
 
-<CoachingServices />
+{/* <CoachingServices /> */}

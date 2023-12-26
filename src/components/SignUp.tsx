@@ -12,7 +12,7 @@ export function SignUp({ showPassword }: { showPassword: boolean }) {
     <div className="xl:max-w-none">
       <div className="mx-auto my-2 flex max-w-xs flex-col gap-2">
         <label htmlFor="email" className="block text-sm font-medium leading-6">
-          Choose Email
+          Email
         </label>
         <input
           type="email"

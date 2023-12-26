@@ -233,8 +233,11 @@ export const navigation: Array<NavGroup> = [
   {
     title: 'Guides',
     links: [
-      { title: 'Introduction', href: '/' }, // TODO_minor: Update this wigth proper nav
-      // { title: 'Quickstart', href: '/quickstart' },
+      { title: 'Home', href: '/' }, // TODO_minor: Update this wigth proper nav
+      {
+        title: '🔒 Mistakes when presenting',
+        href: '/presenting-to-bussiness-users',
+      },
       // { title: 'SDKs', href: '/sdks' },
       // { title: 'Authentication', href: '/authentication' },
       // { title: 'Pagination', href: '/pagination' },
@@ -258,9 +261,9 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul role="list">
-        <TopLevelNavItem href="/">API</TopLevelNavItem>
-        <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
-        <TopLevelNavItem href="#">Support</TopLevelNavItem>
+        <TopLevelNavItem href="/">Home</TopLevelNavItem>
+        <TopLevelNavItem href="/">Home</TopLevelNavItem>
+        {/* <TopLevelNavItem href="#">Support</TopLevelNavItem> */}
         {navigation.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
