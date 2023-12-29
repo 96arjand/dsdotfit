@@ -19,6 +19,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 
 // Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app)
+export const db = getFirestore(app)
 
-export { db }
+// Initialize Google Analytics
+export const analytics = () => {
+  if (typeof window !== 'undefined') {
+    return getAnalytics(app)
+  } else {
+    return null
+  }
+}

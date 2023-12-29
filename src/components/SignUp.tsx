@@ -4,6 +4,7 @@ import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { useState } from 'react'
 import { db } from '../../firebaseConfig'
+import { getAnalytics, logEvent } from 'firebase/analytics'
 
 import { collection, addDoc } from 'firebase/firestore'
 
@@ -13,6 +14,9 @@ export function SignUp({ showPassword }: { showPassword: boolean }) {
   const [password, setPassword] = useState('')
 
   const submitEmail = async () => {
+    const analytics = getAnalytics()
+    logEvent(analytics, 'notification_received')
+    console.log('logged')
     try {
       const emailRegexPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       if (!emailRegexPattern.test(email)) {
