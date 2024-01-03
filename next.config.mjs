@@ -4,11 +4,13 @@ import { recmaPlugins } from './src/mdx/recma.mjs'
 import { rehypePlugins } from './src/mdx/rehype.mjs'
 import { remarkPlugins } from './src/mdx/remark.mjs'
 import withSearch from './src/mdx/search.mjs'
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
 
 const withMDX = nextMDX({
   options: {
-    remarkPlugins,
-    rehypePlugins,
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
     recmaPlugins,
   },
 })

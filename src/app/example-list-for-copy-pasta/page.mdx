@@ -1,0 +1,58 @@
+{/* A hacky as fuck way to get Katex css working properly */}
+{/* You can me here: http://localhost:3000/example-list-for-copy-pasta */}
+import {ExampleImage} from './exampleImage.tsx'
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+  integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+  crossOrigin="anonymous"
+/>
+
+{/* REPLACE: Change this meta data about the list/content */}
+export const metadata = {
+title:
+'Example Title (this will appear in the tab)',
+description:
+"Add a description which will appear below",
+tags: ['list', 'prestenting'],
+}
+
+{/* REPLACE: For each piece of content you can add the sections here and they will apear in the nav bar */}
+{/* REPLACE: For a section to be picked up it mist be a level 1 heading in Markdown eg (# I am a heading) */}
+export const sections = [
+{
+title: 'Example section title 1',
+id: 'example-section-title-1', // REPLACE this has to be a lowercase dash seperated version of the heading
+},
+{
+title: 'Example section title 2',
+id: 'example-section-title-1', // REPLACE this has to be a lowercase dash seperated version of the heading
+},
+]
+
+# {metadata.title}
+
+#### {metadata.description}
+
+<Note>You can add emphasis using this Note component</Note>
+
+# Example section title 1
+
+The rest of this is vanilla markdown.
+I am a list:
+
+- li 1
+- li 2
+
+**hello world**
+
+# Example section title 2
+
+You can add Latex like normal
+
+$\sqrt{a^2 + b^2}$
+
+Adding Images is a bit of a faff. If you need to do this just upload the images in the list folder
+
+<ExampleImage />
