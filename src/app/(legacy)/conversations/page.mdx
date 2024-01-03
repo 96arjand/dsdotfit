@@ -105,9 +105,9 @@ The conversation model contains all the information about the conversations betw
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->conversations->list();
+    client->conversations->list();
     ```
 
     </CodeGroup>
@@ -189,9 +189,9 @@ The conversation model contains all the information about the conversations betw
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->conversations->create([
+    client->conversations->create([
       'contact_id' => 'WAz8eIbvDR60rouK',
     ]);
     ```
@@ -252,9 +252,9 @@ The conversation model contains all the information about the conversations betw
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->conversations->get('xgQQXg3hrtjh7AvZ');
+    client->conversations->get('xgQQXg3hrtjh7AvZ');
     ```
 
     </CodeGroup>
@@ -333,9 +333,9 @@ The conversation model contains all the information about the conversations betw
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->conversations->update('xgQQXg3hrtjh7AvZ', [
+    client->conversations->update('xgQQXg3hrtjh7AvZ', [
       'is_muted' => true,
     ]);
     ```
@@ -396,9 +396,9 @@ The conversation model contains all the information about the conversations betw
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->conversations->delete('xgQQXg3hrtjh7AvZ');
+    client->conversations->delete('xgQQXg3hrtjh7AvZ');
     ```
 
     </CodeGroup>

@@ -87,12 +87,6 @@ The contact model contains all the information about your contacts, such as thei
     client.contacts.list()
     ```
 
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->contacts->list();
-    ```
-
     </CodeGroup>
 
     ```json {{ title: 'Response' }}
@@ -188,16 +182,6 @@ The contact model contains all the information about your contacts, such as thei
     )
     ```
 
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->contacts->create([
-      'username' => 'FrankMcCallister',
-      'phone_number' => '1-800-759-3000',
-      'avatar_url' => 'https://assets.protocol.chat/avatars/frank.jpg',
-    ]);
-    ```
-
     </CodeGroup>
 
     ```json {{ title: 'Response' }}
@@ -252,9 +236,9 @@ The contact model contains all the information about your contacts, such as thei
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->contacts->get('WAz8eIbvDR60rouK');
+    client->contacts->get('WAz8eIbvDR60rouK');
     ```
 
     </CodeGroup>
@@ -322,9 +306,9 @@ The contact model contains all the information about your contacts, such as thei
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->contacts->update('WAz8eIbvDR60rouK', [
+    client->contacts->update('WAz8eIbvDR60rouK', [
       'display_name' => 'UncleFrank',
     ]);
     ```
@@ -383,9 +367,9 @@ The contact model contains all the information about your contacts, such as thei
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->contacts->delete('WAz8eIbvDR60rouK');
+    client->contacts->delete('WAz8eIbvDR60rouK');
     ```
 
     </CodeGroup>

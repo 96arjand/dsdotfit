@@ -86,12 +86,6 @@ The attachment model contains all the information about the files you send to yo
     client.attachments.list()
     ```
 
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->attachments->list();
-    ```
-
     </CodeGroup>
 
     ```json {{ title: 'Response' }}
@@ -162,14 +156,6 @@ The attachment model contains all the information about the files you send to yo
     client.attachments.create(file=file)
     ```
 
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->attachments->create([
-      'file' => $file,
-    ]);
-    ```
-
     </CodeGroup>
 
     ```json {{ title: 'Response' }}
@@ -220,12 +206,6 @@ The attachment model contains all the information about the files you send to yo
     client = ApiClient(token)
 
     client.attachments.get("Nc6yKKMpcxiiFxp6")
-    ```
-
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->attachments->get('Nc6yKKMpcxiiFxp6');
     ```
 
     </CodeGroup>
@@ -291,14 +271,6 @@ The attachment model contains all the information about the files you send to yo
     client.attachments.update("Nc6yKKMpcxiiFxp6", filename="Invoice_room_service__Plaza_Hotel_updated.pdf")
     ```
 
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->attachments->update('Nc6yKKMpcxiiFxp6', [
-      'filename' => 'Invoice_room_service__Plaza_Hotel_updated.pdf',
-    ]);
-    ```
-
     </CodeGroup>
 
     ```json {{ title: 'Response' }}
@@ -349,12 +321,6 @@ The attachment model contains all the information about the files you send to yo
     client = ApiClient(token)
 
     client.attachments.delete("Nc6yKKMpcxiiFxp6")
-    ```
-
-    ```php
-    $client = new \Protocol\ApiClient($token);
-
-    $client->attachments->delete('Nc6yKKMpcxiiFxp6');
     ```
 
     </CodeGroup>

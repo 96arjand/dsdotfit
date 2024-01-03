@@ -93,9 +93,9 @@ The message model contains all the information about the messages and attachment
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->messages->list();
+    client->messages->list();
     ```
 
     </CodeGroup>
@@ -196,9 +196,9 @@ The message model contains all the information about the messages and attachment
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->messages->send([
+    client->messages->send([
       'conversation_id' => 'xgQQXg3hrtjh7AvZ',
       'message' => 'You’re what the French call ‘les incompetents.’',
     ]);
@@ -266,9 +266,9 @@ The message model contains all the information about the messages and attachment
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->messages->get('SIuAFUNKdSYHZF2w');
+    client->messages->get('SIuAFUNKdSYHZF2w');
     ```
 
     </CodeGroup>
@@ -353,9 +353,9 @@ The message model contains all the information about the messages and attachment
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->messages->update('SIuAFUNKdSYHZF2w', [
+    client->messages->update('SIuAFUNKdSYHZF2w', [
       'reactions' => [
         'red_angry_face' => ['KateMcCallister'],
       ],
@@ -430,9 +430,9 @@ The message model contains all the information about the messages and attachment
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->messages->delete('SIuAFUNKdSYHZF2w');
+    client->messages->delete('SIuAFUNKdSYHZF2w');
     ```
 
     </CodeGroup>

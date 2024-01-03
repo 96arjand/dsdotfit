@@ -160,10 +160,10 @@ else:
 ```
 
 ```php
-$signature = $request['headers']['x-protocol-signature'];
-$hash = hash_hmac('sha256', $payload, $secret);
+signature = request['headers']['x-protocol-signature'];
+hash = hash_hmac('sha256', payload, secret);
 
-if (hash_equals($hash, $signature)) {
+if (hash_equals(hash, signature)) {
   // Request is verified
 } else {
   // Request could not be verified

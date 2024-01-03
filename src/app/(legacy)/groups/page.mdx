@@ -89,9 +89,9 @@ The group model contains all the information about your groups, including what c
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->groups->list();
+    client->groups->list();
     ```
 
     </CodeGroup>
@@ -199,9 +199,9 @@ The group model contains all the information about your groups, including what c
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->groups->create([
+    client->groups->create([
       'name' => 'Plaza Hotel',
     ]);
     ```
@@ -260,9 +260,9 @@ The group model contains all the information about your groups, including what c
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->groups->get('L7cGNIBKZiNJ6wqF');
+    client->groups->get('L7cGNIBKZiNJ6wqF');
     ```
 
     </CodeGroup>
@@ -359,9 +359,9 @@ The group model contains all the information about your groups, including what c
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->groups->update('L7cGNIBKZiNJ6wqF', [
+    client->groups->update('L7cGNIBKZiNJ6wqF', [
       'description' => 'The finest in New York.',
     ]);
     ```
@@ -437,9 +437,9 @@ The group model contains all the information about your groups, including what c
     ```
 
     ```php
-    $client = new \Protocol\ApiClient($token);
+    client = new \Protocol\ApiClient(token);
 
-    $client->groups->delete('L7cGNIBKZiNJ6wqF');
+    client->groups->delete('L7cGNIBKZiNJ6wqF');
     ```
 
     </CodeGroup>
