@@ -9,10 +9,10 @@ import remarkMath from 'remark-math'
 
 const withMDX = nextMDX({
   options: {
-    // remarkPlugins: [remarkMath],
-    // rehypePlugins: [rehypeKatex],
-    remarkPlugins,
-    rehypePlugins,
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
+    // remarkPlugins,
+    // rehypePlugins,
     recmaPlugins,
   },
 })
@@ -22,4 +22,4 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
-export default withSearch(withMDX(nextConfig))
+export default withMDX(withSearch(nextConfig))
