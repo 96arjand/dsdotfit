@@ -26,7 +26,10 @@ export default async function RootLayout({
       (await import(`./${filename}`)).sections,
     ]),
   )) as Array<[string, Array<Section>]>
-  let allSections = Object.fromEntries(allSectionsEntries)
+  // let allSections = Object.fromEntries(allSectionsEntries)
+  let allSections = {}
+
+  console.log(children)
 
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
