@@ -9,8 +9,10 @@ import remarkMath from 'remark-math'
 
 const withMDX = nextMDX({
   options: {
-    remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex],
+    // remarkPlugins: [remarkMath],
+    // rehypePlugins: [rehypeKatex],
+    remarkPlugins,
+    rehypePlugins,
     recmaPlugins,
   },
 })
