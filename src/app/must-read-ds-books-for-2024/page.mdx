@@ -1,5 +1,4 @@
 {/* A hacky as fuck way to get Katex css working properly */}
-import { it } from 'node:test'
 import {ExampleImage} from './exampleImage.tsx'
 
 <link
@@ -19,7 +18,35 @@ export const metadata = {
 export const sections = [
   {
     title: 'Learning From Data',
-    id: ' Learning-From-Data',
+    id: 'learning-from-data',
+  },
+  {
+    title: 'Practical Statistics for Data Scientists',
+    id: 'practical-statistics-for-data-scientists',
+  },
+  {
+    title: 'Hands on Machine Learning with Scikit-Learn',
+    id: 'hands-on-machine-learning-with-scikit-learn',
+  },
+  {
+    title: 'The Changing world order',
+    id: 'the-changing-world-order',
+  },
+  {
+    title: 'Mathematics of Machine Learning',
+    id: 'mathematics-of-machine-learning',
+  },
+  {
+    title: 'Probabilistic Machine Learning Kevin P murphy 2022',
+    id: 'probabilistic-machine-learning-kevin-p-murphy-2022',
+  },
+  {
+    title: 'Causal Inference in Python',
+    id: 'causal-inference-in-python',
+  },
+  {
+    title: 'Interpretable Machine Learning',
+    id: 'interpretable-machine-learning',
   },
 ]
 
@@ -58,7 +85,7 @@ export const sections = [
   }
 </Note>
 
-# Learning From Data
+## Learning From Data
 
 This book is about the foundations of Data Science. It explains: what is data science really about; how to approach modelling a problem; and fundamentals of machine learning theory (Generalisation error, bias variance trade off)
 
@@ -71,6 +98,135 @@ The key chapters to read are:
 Where to get it:
 
 - [https://amlbook.com/](https://amlbook.com/)
-- [USA](https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069)
-- [UK](https://www.amazon.co.uk/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069/ref=sr_1_4?crid=2T9KNTTCQYWY&keywords=Learning+from+data&qid=1703803388&sprefix=learning+from+data%2Caps%2C96&sr=8-4)
-- [CA](https://www.amazon.ca/Learning-Yaser-Abu-Mostafa-Magdon-Ismail-Hsuan-Tien/dp/1600490069/ref=sr_1_1?crid=EJD72NR2OMO0&keywords=learning+from+data&qid=1703803688&sprefix=learning+from+da%2Caps%2C169&sr=8-1)
+- Amazon
+
+## Practical Statistics for Data Scientists
+
+A hands on approach to learning foundational statistics for Data Scientists
+
+This book really walks you through the basics of stats. From basic descriptive statistics, experimentation and even some of the basic algorithms you will be using
+
+The key chapters to read are:
+
+- Chapter 1: Exploratory Data Analysis
+- Chapter 2: Data and Sampling Distributions
+- Chapter 3: Statistical Experiments and Significance Testing **{'<<'} This one is really good**
+- Chapter 4: Regression and Prediction
+- Chapter 5: Classification
+
+Where to get it:
+
+- [O'reilly](https://www.oreilly.com/library/view/practical-statistics-for/9781492072935/)
+- Amazon
+
+## Hands on Machine Learning with Scikit-Learn
+
+Practical examples for applying machine learning models
+
+A GREAT resource for the practical implementation of ml models, lots of good examples and code snippets for you to steal (… use). If you really covered the basics in the previous books then you can skip/skim the basics here
+
+The key chapters to read are:
+
+- Chapter 2: End-to-End Machine Learning Project
+- Chapter 4: Training Models
+- Chapter 6: Decision Trees
+- Chapter 7: Ensemble Learning and Random Forests
+- Chapter 8: Dimensionality Reduction
+
+Where to get it:
+
+- [O'reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+- Amazon
+
+## The Changing world order
+
+The book is about how the world’s reserve currency and subsequently global positioning changes over time, what features effect it the most and how.
+
+An unconventional recommendation here but Ray Dalio walks you through his analysis on how the world powers/reserve currency status changes using a very data driven approach. He uses the scientific method in a way I wish most data scientists would approach their work problems. Less certainty and more inquiry. Ask questions (aka formulate hypothesis), collect data, synthesise results, present to experts (in your case stakeholders) collect feedback and iterate.
+
+The key chapters to read are:
+
+- Introduction
+
+Where to get it:
+
+- Amazon
+
+## Mathematics of Machine Learning
+
+Learn the maths behind machine learning, Linear Algebra
+
+Machine Learning is all about vectors, matrices and probability. Understand how these fundamental topics work so that you can master any machine learning algorithm. Lots of good exercises and it really does walk you through the maths!
+Key Chapters:
+
+- Chapter 1: Introduction and Motivation
+- Chapter 2: Linear Algebra
+- Chapter 3: Analytic Geometry
+- Chapter 4: Matrix Decomposition
+- Chapter 5: Vector Calculus
+- Chapter 7: Continuos Optimization
+
+Where to get it:
+
+- [Available for Free](https://mml-book.github.io/book/mml-book.pdf)
+
+## Probabilistic Machine Learning Kevin P murphy 2022
+
+The machine learning bible
+This is the machine learning bible. I don’t think you should read this cover to cover. This is more of a reference book. Use as needed. Honestly, EVERYTHING is here. If you have a solid maths & programming background and you just want to learn the theory of ML then go for this book. It walks you through the maths, intuitions etc. I really can’t emphasise this enough. It contains basically everything about modern machine learning until 2024. Not for the faint of heart. There is a part 2 containing advanced topics. Good luck with that one if you’re interested lol.
+
+Key Chapters: Anything you choose to read
+
+Where to get it:
+
+- [Available for Free](https://probml.github.io/pml-book/book1.html)
+
+## Practical Guide to Applied Conformal Prediction in Python
+
+Estimating Uncertainty in your models
+
+Conformal Prediction is a relatively new, model agnostic framework that you can use to quantify the uncertainty in your models. The author is very vocal on twitter about its benefits and a lot of big companies, universities, researchers and personally myself have started to use it in practice. Learn and apply it in order to create valid prediction intervals for your stakeholders.
+
+Key Chapters:
+
+- Chapter 2: Overview of Conformal Prediction
+- Chapter 3: Fundementals of Conformal Prediction
+- Chapter 4: Validity and Efficiency of Conformal Prediction
+- Chapter 5: Types of Conformal Predictors
+
+Where to get it:
+
+- Amazon
+
+## Causal Inference in Python
+
+Figuring out why something happens, asking what if questions
+
+Correlation isn’t causation, but what happens when it is? This book goes into the science behind causality and how you can use it. This book also has one of the best foundational statistics explanations I've ever come across and really teaches you to be a whizz with regression. I really enjoyed reading it.
+Key Chapters:
+
+- Just read it at your leisure
+
+Where to get it:
+
+- Amazon
+- O'reily
+- [A more mathy version here](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+
+## Interpretable Machine Learning
+
+Figure out how your model behaves and estimate what effect your features have on your target
+
+Getting a prediction from a model is easy but figuring out why that model made that prediction is a lot harder. This book goes through the modern approaches to estimating that! This is more of a text that gives you a birds eye perspective. Once you get the gist go to the model packages to actually understand how to use these techniques along with their trade offs
+Key Chapters:
+
+- Chapter 3: Interprebility
+- Chapter 5: Interpretable Models
+- Chapter 6: Model Agnostic Methods
+- Chapter 8: Global Model Agnostic Methods
+- Chapter 9: Local Model Agnostic Methods
+
+Where to get it:
+
+- [Here for free](https://christophm.github.io/interpretable-ml-book/)
+- Amazon

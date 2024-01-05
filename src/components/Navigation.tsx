@@ -235,8 +235,12 @@ export const navigation: Array<NavGroup> = [
     links: [
       { title: 'Home', href: '/' }, // TODO_minor: Update this wigth proper nav
       {
-        title: '🔒 Mistakes when presenting',
+        title: 'Mistakes when presenting',
         href: '/presenting-to-bussiness-users',
+      },
+      {
+        title: 'Must Read DS Books ',
+        href: '/must-read-ds-books-for-2024',
       },
       // { title: 'SDKs', href: '/sdks' },
       // { title: 'Authentication', href: '/authentication' },
