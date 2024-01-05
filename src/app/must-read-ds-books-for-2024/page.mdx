@@ -1,0 +1,70 @@
+{/* A hacky as fuck way to get Katex css working properly */}
+import { it } from 'node:test'
+import {ExampleImage} from './exampleImage.tsx'
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+  integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+  crossOrigin="anonymous"
+/>
+
+export const metadata = {
+  title: 'Must Read Books to learn Data Science in 2024',
+  description:
+    "These book recomendations are not manuals like alot of the stuff you find on Medium. They won't tell you 'how I made this sexy ML model in Python' with no context. They require a small investment of time, but the pay off is that they help to embed the thought process of a data scientist. That doesn't mean they don't have practical examples and aren't relevent to industry. But you should set your expecttations that the point of reading these books is to embed the inution and thought process of a DS.",
+  tags: ['list', 'books'],
+}
+
+export const sections = [
+  {
+    title: 'Learning From Data',
+    id: ' Learning-From-Data',
+  },
+]
+
+# {metadata.title}
+
+#### {metadata.description}
+
+<Note>
+  <>
+    If you aren't a DS yet or don't feel comfortable with maths/statistics this
+    note is for you. Do you ever get frustrated reading the same paragraph or
+    section from a book/paper and still have no idea whats going on? Do you
+    often find yourself spending ages trying to understand some algebraic
+    equations and after a few hours have passed you have multiple tabs open and
+    feel like crap?
+    <p>If so this next paragraph is for you{'...'}</p>
+    <p>
+      STOP READING BOOKS LIKE THAT! Now I'm being slightly facetious but my
+      point is true. I've wasted alot of time reading the wrong way. I'm not
+      going to tell you how to suck eggs. If you have a system that works for
+      you go for it. But my point here is that if you find what I said
+      relateable stop trying to understand every little detail of whats
+      happening. Focus on the examples in these books and take a second to step
+      back and understand what the authour is trying to do. To help with this
+      we've highlighted the relevent chapters and why they are useful and in the
+      coming weeks we'll flesh out each book in more detail to help you build
+      the intuition.
+    </p>
+    <p>It is ok to read a chapter and not understand everything. Thats normal!</p>
+  </>
+</Note>
+
+# Learning From Data
+
+This book is about the foundations of Data Science. It explains: what is data science really about; how to approach modelling a problem; and fundamentals of machine learning theory (Generalisation error, bias variance trade off)
+
+The key chapters to read are:
+
+- Chapter 1: The Learning Problem
+- Chapter 2: Training versus Testing
+- Chapter 3: Overftting
+
+Where to get it:
+
+- [https://amlbook.com/](https://amlbook.com/)
+- [USA](https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069)
+- [UK](https://www.amazon.co.uk/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069/ref=sr_1_4?crid=2T9KNTTCQYWY&keywords=Learning+from+data&qid=1703803388&sprefix=learning+from+data%2Caps%2C96&sr=8-4)
+- [CA](https://www.amazon.ca/Learning-Yaser-Abu-Mostafa-Magdon-Ismail-Hsuan-Tien/dp/1600490069/ref=sr_1_1?crid=EJD72NR2OMO0&keywords=learning+from+data&qid=1703803688&sprefix=learning+from+da%2Caps%2C169&sr=8-1)
